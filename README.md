@@ -2,7 +2,7 @@
 
 **Find the service code you need. Trace it straight to the source.**
 
-RAMQ Code Navigator is an independent, browser-based interface for exploring medical service codes in the RAMQ specialist fee-for-service manual. Created by **Chiu**, it combines a compact search box, anatomy browsing and step-by-step navigation through the manual’s hierarchy.
+RAMQ Code Navigator is an independent, browser-based interface for exploring medical service codes in the RAMQ specialist fee-for-service manual. Created by **L. Chiu**, it combines a compact search box, anatomy browsing and step-by-step navigation through the manual’s hierarchy.
 
 The interface gives priority to orthopedic workflows while retaining access to the other indexed specialty headings. It is intended to make the manual easier to navigate. It is not an official RAMQ application, a clinical decision tool, or a guarantee that a billing code is eligible for a particular case.
 
@@ -17,10 +17,8 @@ This repository is ready for GitHub Pages. **A public website has not yet been d
 With a repository named `ramq-code-navigator`, the usual address is:
 
 ```text
-https://YOUR-USERNAME.github.io/ramq-code-navigator/
+https://larichiu.github.io/ramq-code-navigator/
 ```
-
-Replace `YOUR-USERNAME` with the account that owns the repository. This is a URL template, not an active link. Once Pages reports a successful deployment, replace this paragraph with the verified public URL.
 
 A link beginning with `localhost` or `127.0.0.1` only points to the computer on which it is opened. Sending that development link to colleagues will not give them access to your copy.
 
