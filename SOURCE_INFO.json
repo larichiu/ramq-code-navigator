@@ -1,0 +1,14 @@
+{
+  "project": "RAMQ Code Navigator",
+  "version": "3",
+  "copyright": "Copyright (c) 2026 Chiu",
+  "softwareLicense": "MIT",
+  "manualCaptured": "2026-10-15",
+  "manualURL": "https://www.ramq.gouv.qc.ca/fr/professionnels/medecin-specialiste/manuels-guides/manuel-remuneration-acte",
+  "rowSourceURL": "https://www.ramq.gouv.qc.ca/manuel-professionnel/6379801/iframe",
+  "indexedRows": 5679,
+  "musculoskeletalRows": 888,
+  "dataRefresh": "Manual snapshot; no automatic refresh",
+  "englishTranslations": "Include machine translations; not all clinically reviewed",
+  "thirdPartyContent": "RAMQ content is not relicensed under MIT"
+}
