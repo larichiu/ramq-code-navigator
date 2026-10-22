@@ -1,0 +1,643 @@
+[
+  {
+    "query": "TKA",
+    "reason": "reference alias",
+    "count": 1,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "totalKnee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02403"
+    ]
+  },
+  {
+    "query": "knee replacement",
+    "reason": "common phrase",
+    "count": 16,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "knee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02492",
+      "02403",
+      "02305",
+      "09539",
+      "09540",
+      "18160",
+      "18161",
+      "18162",
+      "18163",
+      "02498",
+      "02451",
+      "02452"
+    ]
+  },
+  {
+    "query": "total knee replacement",
+    "reason": "expanded alias",
+    "count": 1,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "totalKnee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02403"
+    ]
+  },
+  {
+    "query": "left TKA",
+    "reason": "laterality",
+    "count": 1,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "totalKnee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02403"
+    ]
+  },
+  {
+    "query": "revision TKA",
+    "reason": "revision",
+    "count": 12,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "totalKnee",
+      "revision"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18160",
+      "18161",
+      "18162",
+      "18163",
+      "18180",
+      "18181",
+      "18015",
+      "02498",
+      "18118",
+      "18119",
+      "18122",
+      "18129"
+    ]
+  },
+  {
+    "query": "revision RTSA",
+    "reason": "revision anatomy",
+    "count": 6,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "reverseShoulder",
+      "revision"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18139",
+      "18089",
+      "18090",
+      "18091",
+      "18092",
+      "18093"
+    ]
+  },
+  {
+    "query": "ORIF distal radius",
+    "reason": "reference alias",
+    "count": 3,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "openReduction",
+      "distalRadius"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18063",
+      "18065",
+      "18152"
+    ]
+  },
+  {
+    "query": "distal radius ORIF",
+    "reason": "reordered phrase",
+    "count": 3,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "openReduction",
+      "distalRadius"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18063",
+      "18065",
+      "18152"
+    ]
+  },
+  {
+    "query": "distal radius ORIF with volar plate",
+    "reason": "implant detail",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "openReduction",
+      "distalRadius"
+    ],
+    "unrecognized": [
+      "volar"
+    ],
+    "codes": []
+  },
+  {
+    "query": "ankle fracture",
+    "reason": "broad family",
+    "count": 6,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "fracture",
+      "ankle"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02708",
+      "02727",
+      "09542",
+      "18070",
+      "18068",
+      "18069"
+    ]
+  },
+  {
+    "query": "bimalleolar ankle ORIF",
+    "reason": "specific",
+    "count": 1,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "openReduction",
+      "bimalleolar",
+      "ankle"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "09542"
+    ]
+  },
+  {
+    "query": "trimalleolar ankle ORIF",
+    "reason": "primary versus supplement",
+    "count": 2,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "openReduction",
+      "trimalleolar",
+      "ankle"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "09542",
+      "18068"
+    ]
+  },
+  {
+    "query": "ankle fracture without reduction",
+    "reason": "negation",
+    "count": 0,
+    "role": "surgery",
+    "clarification": "negation",
+    "concepts": [],
+    "unrecognized": [],
+    "codes": []
+  },
+  {
+    "query": "no fracture ankle hardware removal",
+    "reason": "negation",
+    "count": 0,
+    "role": "surgery",
+    "clarification": "negation",
+    "concepts": [],
+    "unrecognized": [],
+    "codes": []
+  },
+  {
+    "query": "not an ankle fracture",
+    "reason": "negation",
+    "count": 0,
+    "role": "surgery",
+    "clarification": "negation",
+    "concepts": [],
+    "unrecognized": [],
+    "codes": []
+  },
+  {
+    "query": "ankle hardware removal",
+    "reason": "reference",
+    "count": 2,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "hardwareRemoval",
+      "ankle"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02304",
+      "02306"
+    ]
+  },
+  {
+    "query": "hip hemiarthroplasty",
+    "reason": "common phrase",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "hip"
+    ],
+    "unrecognized": [
+      "hemiarthroplasty"
+    ],
+    "codes": []
+  },
+  {
+    "query": "hemi hip",
+    "reason": "colloquial",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "hip"
+    ],
+    "unrecognized": [
+      "hemi"
+    ],
+    "codes": []
+  },
+  {
+    "query": "DHS hip fracture",
+    "reason": "abbreviation",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "fracture",
+      "hip"
+    ],
+    "unrecognized": [
+      "dhs"
+    ],
+    "codes": []
+  },
+  {
+    "query": "gamma nail",
+    "reason": "implant name",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [],
+    "unrecognized": [
+      "gamma",
+      "nail"
+    ],
+    "codes": []
+  },
+  {
+    "query": "hip pinning",
+    "reason": "common phrase",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "hip"
+    ],
+    "unrecognized": [],
+    "codes": []
+  },
+  {
+    "query": "trigger finger release",
+    "reason": "common phrase",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [],
+    "unrecognized": [
+      "trigger",
+      "finger",
+      "release"
+    ],
+    "codes": []
+  },
+  {
+    "query": "cubital tunnel release",
+    "reason": "common phrase",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [],
+    "unrecognized": [
+      "cubital",
+      "tunnel",
+      "release"
+    ],
+    "codes": []
+  },
+  {
+    "query": "carpal tunnel release",
+    "reason": "reference",
+    "count": 2,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "carpalTunnel"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02383",
+      "02382"
+    ]
+  },
+  {
+    "query": "CTR",
+    "reason": "reference abbreviation",
+    "count": 2,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "carpalTunnel"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02383",
+      "02382"
+    ]
+  },
+  {
+    "query": "RCR",
+    "reason": "reference abbreviation",
+    "count": 3,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "cuffRepair"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18098",
+      "18099",
+      "18110"
+    ]
+  },
+  {
+    "query": "rotator cuff repair",
+    "reason": "reference",
+    "count": 3,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "cuffRepair"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18098",
+      "18099",
+      "18110"
+    ]
+  },
+  {
+    "query": "rotator cuff tear repair",
+    "reason": "added detail",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [],
+    "unrecognized": [
+      "rotator",
+      "cuff",
+      "tear"
+    ],
+    "codes": []
+  },
+  {
+    "query": "shoulder scope",
+    "reason": "colloquial",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "shoulder"
+    ],
+    "unrecognized": [
+      "scope"
+    ],
+    "codes": []
+  },
+  {
+    "query": "ACL reconstruction",
+    "reason": "reference",
+    "count": 1,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "acl"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18020"
+    ]
+  },
+  {
+    "query": "ACL repair",
+    "reason": "repair is not reconstruction",
+    "count": 0,
+    "role": "surgery",
+    "clarification": "distinctTechnique",
+    "concepts": [],
+    "unrecognized": [],
+    "codes": []
+  },
+  {
+    "query": "knee meniscectomy",
+    "reason": "reference",
+    "count": 2,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "meniscectomy",
+      "knee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02056",
+      "18028"
+    ]
+  },
+  {
+    "query": "knee arthroscopy meniscus repair",
+    "reason": "common phrase",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "arthroscopy",
+      "knee"
+    ],
+    "unrecognized": [
+      "meniscus"
+    ],
+    "codes": []
+  },
+  {
+    "query": "arthroplasty hip revision",
+    "reason": "revision order",
+    "count": 10,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "revision",
+      "hip"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "18159",
+      "09598",
+      "02251",
+      "02254",
+      "02259",
+      "18177",
+      "02260",
+      "02350",
+      "02258",
+      "02265"
+    ]
+  },
+  {
+    "query": "rotator cuf repair",
+    "reason": "typing error",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [],
+    "unrecognized": [
+      "rotator",
+      "cuf"
+    ],
+    "codes": []
+  },
+  {
+    "query": "fracture de la cheville",
+    "reason": "French",
+    "count": 6,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "fracture",
+      "ankle"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02708",
+      "02727",
+      "09542",
+      "18070",
+      "18068",
+      "18069"
+    ]
+  },
+  {
+    "query": "prothèse totale de genou",
+    "reason": "French variation",
+    "count": 5,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "knee"
+    ],
+    "unrecognized": [
+      "prothese",
+      "totale"
+    ],
+    "codes": [
+      "02492",
+      "02403",
+      "09539",
+      "09540",
+      "18163"
+    ]
+  },
+  {
+    "query": "PTG",
+    "reason": "French abbreviation",
+    "count": 1,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "totalKnee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02403"
+    ]
+  },
+  {
+    "query": "knee replacement under anesthesia",
+    "reason": "role leakage",
+    "count": 16,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "knee"
+    ],
+    "unrecognized": [],
+    "codes": [
+      "02492",
+      "02403",
+      "02305",
+      "09539",
+      "09540",
+      "18160",
+      "18161",
+      "18162",
+      "18163",
+      "02498",
+      "02451",
+      "02452"
+    ]
+  },
+  {
+    "query": "bankart repair",
+    "reason": "named procedure",
+    "count": 0,
+    "role": "surgery",
+    "clarification": null,
+    "concepts": [
+      "bankart"
+    ],
+    "unrecognized": [],
+    "codes": []
+  },
+  {
+    "query": "TKA 02708",
+    "reason": "conflicting name and code",
+    "count": 0,
+    "role": "surgery",
+    "clarification": "codeConflict",
+    "concepts": [],
+    "unrecognized": [],
+    "codes": []
+  }
+]

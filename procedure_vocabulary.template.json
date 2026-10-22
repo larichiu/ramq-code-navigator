@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "vocabularyVersion": "DRAFT-2026-10-21",
+  "manualSnapshot": "2026-10-15",
+  "active": false,
+  "implementationStatus": "DESIGN TEMPLATE ONLY: current application does not load this file",
+  "concepts": [
+    {
+      "id": "ortho.knee.primary-total-arthroplasty",
+      "preferredLabel": {
+        "en": "Primary total knee arthroplasty",
+        "fr": "Arthroplastie totale primaire du genou"
+      },
+      "aliases": {
+        "en": [
+          "TKA",
+          "TKR",
+          "total knee replacement"
+        ],
+        "fr": [
+          "PTG",
+          "prothèse totale du genou"
+        ]
+      },
+      "specialty": "orthopedic surgery",
+      "bodyPart": "knee",
+      "intent": "procedure",
+      "modifiers": {
+        "technique": null,
+        "revision": false,
+        "compartments": "requires source-specific review"
+      },
+      "ramqCandidates": [
+        {
+          "code": "02403",
+          "rowId": "273397",
+          "sourceUrl": "https://www.ramq.gouv.qc.ca/manuel-professionnel/6379801/iframe#273397",
+          "mappingStatus": "draft",
+          "note": "Example from current index; review full conditions and allowed context before approval."
+        }
+      ],
+      "ambiguityRules": [
+        "Do not interpret generic knee replacement as a confirmed bicompartmental primary procedure.",
+        "Revision and unicompartmental procedures require different concepts.",
+        "Laterality is a billing context; do not silently discard it."
+      ],
+      "review": {
+        "status": "draft",
+        "reviewer": null,
+        "reviewedAt": null
+      },
+      "tests": [
+        {
+          "query": "TKA",
+          "expectedCandidateCodes": [
+            "02403"
+          ]
+        },
+        {
+          "query": "revision TKA",
+          "mustNotReturnCodes": [
+            "02403"
+          ]
+        },
+        {
+          "query": "TKA without implantation",
+          "requiresClarification": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+physician_term,language,specialty,body_part,clinical_concept,technique,primary_or_revision,candidate_codes,required_clarifications,source_row_ids,manual_snapshot,review_status,reviewer,reviewed_at,personal_or_shared
+TKA,en,orthopedic surgery,knee,total knee arthroplasty,bicompartmental prosthesis,primary,02403,Confirm primary procedure and full source inclusions,273397,2026-10-15,draft,,,shared
+shoulder scope,en,orthopedic surgery,shoulder,shoulder arthroscopy,,,,Which arthroscopic procedure was performed?,,2026-10-15,draft,,,shared
+hip hemi,en,orthopedic surgery,hip,hip hemiarthroplasty,,,,Confirm procedure variant and source eligibility,,2026-10-15,draft,,,personal
