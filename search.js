@@ -54,10 +54,21 @@ const translations={plates:'plaque',plate:'plaque',screws:'vis',screw:'vis',perc
 const stop=new Set('i did do doing had have performed performing patient a an the of for to my with without on in at from under and or is it this that procedure surgery surgical case please find show me all possible code codes time ortho orthopedics orthopaedics orthopedic orthopaedic anesthesiology anesthesiologie anaesthesiology anesthesia anaesthesia anesthesie general generale ga r2 r1 units unit duration temps duree unite unites de du des d la le les un une au aux en pour sous avec sans et ou par je ai fait une intervention chirurgie orthopedique service services des what which can you need would like looking look want cases case right left bilateral both done perform performed type get give related show looking search some give please'.split(' '));
 function infer(q){const n=norm(q);return{role:/anesth|anaesth|r 2|r2|time code|time units|unites de base/.test(n)?'anesthesia':null,durationOnly:!/fracture|orif|rofi|ankle|cheville|ortho/.test(n)&&/duration units|unites de duree|time table|duration table|tableau.*duree/.test(n)}}
 function inSpecialty(e,scope){if(scope==='all')return true;if(scope==='ortho'||scope==='Chirurgie orthopédique')return e.orthopedic||e.topic==='Chirurgie orthopédique';return e.topic===scope||e.path.some(p=>norm(p)===norm(scope));}
-function find(q,entries,{scope='ortho',role='surgery'}={}){
- let n=norm(q).replace(/extremeties/g,'extremities').replace(/othopedics/g,'orthopedics');const intent=infer(n);role=intent.role||role;
- const code=n.match(/\b\d{5}\b/);if(code){const list=entries.filter(e=>e.code===code[0]);return{entries:list,concepts:['code'],unrecognized:[],role,code:true}}
- let remaining=n,tests=[],used=[];const revision=/\brevision\b/.test(n);
+function find(q,entries,{scope='ortho',role='surgery',inferRole=true}={}){
+ let n=norm(q).replace(/extremeties/g,'extremities').replace(/othopedics/g,'orthopedics');const intent=infer(n);role=(inferRole&&intent.role)||role;
+ const clarify=reason=>({entries:[],concepts:[],unrecognized:[],role,clarification:reason});
+ // Do not discard negation or conflate direct ligament repair with reconstruction.
+ if(/\b(without|not|no|sans|aucun|aucune|pas de|pas d|ne pas|non)\b/.test(n))return clarify('negation');
+ if(/\b(?:acl|pcl|lca|lcp)\s+(?:primary\s+)?repair\b|\brepair\s+(?:of\s+)?(?:the\s+)?(?:acl|pcl)\b|\breparation\s+(?:du\s+)?(?:lca|lcp)\b/.test(n)&&! /reconstruct/.test(n))return clarify('distinctTechnique');
+ const explicitCodes=n.match(/\b\d{5}\b/g)||[];if(new Set(explicitCodes).size>1)return clarify('multipleCodes');
+ const code=n.match(/\b\d{5}\b/);if(code){
+ const list=entries.filter(e=>e.code===code[0]);
+ if(list.length&&!list.some(e=>inSpecialty(e,scope)))return clarify('scopeMismatch');
+ const remainder=n.replace(code[0],'').trim();
+ if(remainder){const described=find(remainder,entries,{scope,role,inferRole});if(described.clarification)return described;if(described.concepts.length&& !described.entries.some(e=>e.code===code[0]))return clarify('codeConflict')}
+ return{entries:list.filter(e=>inSpecialty(e,scope)),concepts:['code'],unrecognized:[],role,code:true}}
+
+ let remaining=n,tests=[],used=[];const revision=/\b(revision|reprise)\b/.test(n);
  for(const [re,test,key] of ordered){re.lastIndex=0;if(re.test(remaining)){
    // Revision arthroplasty uses its own published table, rather than the primary-implant alias.
    if(revision&&['totalKnee','totalHip','totalShoulder','unicompartmentalKnee','reverseShoulder'].includes(key)){
@@ -66,7 +77,7 @@ function find(q,entries,{scope='ortho',role='surgery'}={}){
    used.push(key);re.lastIndex=0;remaining=remaining.replace(re,' ');
  }}
  const tokens=remaining.split(' ').filter(t=>t&&!stop.has(t)&&!/^\d+$/.test(t));
- const list=entries.filter(e=>inSpecialty(e,scope)&&(role!=='anesthesia'||!!e.baseUnits)&&tests.every(f=>f(e))&&tokens.every(t=>{let tr=translations[t]||t;return tr.split(' ').every(part=>all(e).split(' ').some(w=>w===part||part.length>4&&(w===part+'s'||w+'s'===part)))}));
+ const list=entries.filter(e=>(!used.includes('acl')||used.includes('pcl')||e.code!=='18022')&&(!used.includes('pcl')||used.includes('acl')||e.code!=='18022')&&inSpecialty(e,scope)&&(role!=='anesthesia'||!!e.baseUnits)&&tests.every(f=>f(e))&&tokens.every(t=>{let tr=translations[t]||t;return tr.split(' ').every(part=>all(e).split(' ').some(w=>w===part||part.length>4&&(w===part+'s'||w+'s'===part)))}));
  const specificity=e=>{let s=0;if(/supplement/.test(label(e)))s-=5;if(/revision|remplacement/.test(cat(e))&&!revision)s-=2;return s};
  list.sort((a,b)=>specificity(b)-specificity(a));
  return{entries:list,concepts:used,unrecognized:tokens.filter(t=>!translations[t]),role,durationOnly:intent.durationOnly};
