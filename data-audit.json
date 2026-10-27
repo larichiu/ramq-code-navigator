@@ -1,0 +1,198 @@
+{
+  "snapshot": "2026-10-15",
+  "coverage": [
+    {
+      "body": "Pied",
+      "sourceRows": 76,
+      "indexedRows": 76,
+      "codesAgree": true
+    },
+    {
+      "body": "Colonne vertébrale",
+      "sourceRows": 101,
+      "indexedRows": 101,
+      "codesAgree": true
+    }
+  ],
+  "corrections": [
+    {
+      "code": "02923",
+      "before": [
+        "G - Musculo-squelettique",
+        "Squelette axial",
+        "Colonne vertébrale",
+        "Discoïdectomie incluant la laminectomie au même niveau, le cas échéant",
+        "voie postérieure",
+        "avec greffe",
+        "avec greffe et instrumentation",
+        "cervicale ou dorsale"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Squelette axial",
+        "Colonne vertébrale",
+        "Discoïdectomie incluant la laminectomie au même niveau, le cas échéant",
+        "voie postérieure",
+        "avec greffe et instrumentation",
+        "cervicale ou dorsale"
+      ]
+    },
+    {
+      "code": "02022",
+      "before": [
+        "G - Musculo-squelettique",
+        "Squelette axial",
+        "Colonne vertébrale",
+        "Discoïdectomie incluant la laminectomie au même niveau, le cas échéant",
+        "voie postérieure",
+        "avec greffe",
+        "avec greffe et instrumentation",
+        "lombaire"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Squelette axial",
+        "Colonne vertébrale",
+        "Discoïdectomie incluant la laminectomie au même niveau, le cas échéant",
+        "voie postérieure",
+        "avec greffe et instrumentation",
+        "lombaire"
+      ]
+    },
+    {
+      "code": "02024",
+      "before": [
+        "G - Musculo-squelettique",
+        "Squelette axial",
+        "Colonne vertébrale",
+        "Discoïdectomie incluant la laminectomie au même niveau, le cas échéant",
+        "voie postérieure",
+        "avec greffe",
+        "avec greffe et instrumentation",
+        "lombaire"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Squelette axial",
+        "Colonne vertébrale",
+        "Discoïdectomie incluant la laminectomie au même niveau, le cas échéant",
+        "voie postérieure",
+        "avec greffe et instrumentation",
+        "lombaire"
+      ]
+    },
+    {
+      "code": "02946",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Arthrodèse",
+        "Articulation tarso-métatarsienne et/ou inter-cuneiforme et/ou naviculo-cuniforme"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Arthrodèse"
+      ]
+    },
+    {
+      "code": "02940",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Arthrodèse",
+        "Articulation tarso-métatarsienne et/ou inter-cuneiforme et/ou naviculo-cuniforme"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Arthrodèse"
+      ]
+    },
+    {
+      "code": "02555",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Correction d'hallux valgus ou varus",
+        "pied bot ou astragale vertical"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Pied bot ou astragale vertical"
+      ]
+    },
+    {
+      "code": "02556",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Correction d'hallux valgus ou varus",
+        "pied bot ou astragale vertical"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Pied bot ou astragale vertical"
+      ]
+    },
+    {
+      "code": "02558",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Correction d'hallux valgus ou varus",
+        "pied bot ou astragale vertical"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Pied bot ou astragale vertical"
+      ]
+    },
+    {
+      "code": "02560",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Correction d'hallux valgus ou varus",
+        "pied bot ou astragale vertical"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Pied bot ou astragale vertical"
+      ]
+    },
+    {
+      "code": "02563",
+      "before": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Correction d'hallux valgus ou varus",
+        "pied bot ou astragale vertical"
+      ],
+      "after": [
+        "G - Musculo-squelettique",
+        "Extrémités - Membres inférieurs",
+        "Pied",
+        "Pied bot ou astragale vertical"
+      ]
+    }
+  ],
+  "all5679RowsPreserved": true
+}

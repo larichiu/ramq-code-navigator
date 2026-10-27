@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const d=JSON.parse(fs.readFileSync(__dirname+'/data.json')),s=require('./search.js');const run=q=>s.find(q,d.entries,{scope:'ortho',inferRole:false}),codes=q=>run(q).entries.map(e=>e.code);
+for(const q of ['arthrodesis of 1st MTP','first metatarsophalangeal fusion','arthrodèse MTP'])assert.deepEqual(codes(q),['02946'],q);
+assert(codes('great toe fusion').includes('02946'));assert(codes('great toe fusion').includes('02940'));
+assert.deepEqual(codes('IP fusion'),['02940']);
+assert.deepEqual(codes('hallux valgus without osteotomy'),['09593']);assert.deepEqual(codes('hallux valgus sans ostéotomie'),['09593']);
+assert.equal(codes('halgus valgus').length,7);
+assert.deepEqual(codes('laminectomy'),codes('laminectomie'));assert(codes('lumbar laminectomy').length>0);
+assert(!codes('fusion').includes('02213'));assert(!codes('fusion').includes('02223'));assert(codes('fusion').includes('18078'));
+assert.equal(codes('hallux valgus IP fusion without osteotomy').length,0,'Do not invent one code for a combined description');
+const r=run('fusion').entries;assert(r.every((e,i)=>!i||e.sourceOrder>=r[i-1].sourceOrder),'manual order');
+const byCode=c=>d.entries.find(e=>e.code===c);
+for(const c of ['02946','02940'])assert(!byCode(c).path.some(p=>/inter-cuneiforme/.test(p)),c);
+assert.equal(byCode('02555').category,'Pied bot ou astragale vertical');
+assert(!byCode('02923').subfields.includes('avec greffe'),'Avoid contradictory graft branches');
+assert.equal(d.entries.length,5679);assert.equal(d.entries.filter(e=>e.body==='Pied').length,76);assert.equal(d.entries.filter(e=>e.body==='Colonne vertébrale').length,101);
+console.log('Passed v3.3: MTP/IP aliases, exclusions, spelling, bilingual laminectomy, false fusion matches, complete source order, corrected hierarchy, all 5679 rows retained.');

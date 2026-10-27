@@ -1,6 +1,6 @@
 {
   "project": "RAMQ Code Navigator",
-  "version": "3.2",
+  "version": "3.3",
   "copyright": "Copyright (c) 2026 Chiu",
   "softwareLicense": "MIT",
   "manualCaptured": "2026-10-15",
@@ -11,6 +11,9 @@
   "dataRefresh": "Manual snapshot; no automatic refresh",
   "englishTranslations": "Include machine translations; not all clinically reviewed",
   "thirdPartyContent": "RAMQ content is not relicensed under MIT",
-  "auditDate": "2026-10-21",
-  "knownLimits": "Unresolved hierarchy errors, vocabulary gaps and partially reviewed translation. No active learning implemented."
+  "auditDate": "2026-10-26",
+  "knownLimits": "Unresolved hierarchy errors, vocabulary gaps and partially reviewed translation. No active learning implemented.",
+  "footRowsChecked": 76,
+  "spinalColumnRowsChecked": 101,
+  "correctedHeadingPaths": 10
 }

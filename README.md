@@ -10,19 +10,21 @@ Created by **L. Chiu**. An independent interface for exploring codes in RAMQ’s
 
 Type a procedure, body part, supported abbreviation or five-digit code, then select **Find codes** or press Enter.
 
-Examples: `ankle fracture`, `bimalleolar ankle ORIF`, `ORIF distal radius`, `TKA`, `THA`, `RTSA` or `carpal tunnel release`.
+Examples: `arthrodesis of 1st MTP`, `IP fusion`, `laminectomy`, `hallux valgus without osteotomy`, `ankle fracture`, `bimalleolar ankle ORIF`, `ORIF distal radius`, `TKA`, `THA`, `RTSA` or `carpal tunnel release`.
 
-Each result puts the **code and procedure description** first. Click the code to copy it. Different techniques, revisions and supplements may appear as separate candidates.
+Results are grouped under anatomical and procedure headings in manual order. Each result puts the **code and procedure description** first, with a small grey reference fee beneath the code. All matching entries are available by scrolling; there is no “Show more” button. Click the code to copy it. Different techniques, revisions and supplements may appear as separate candidates.
 
-![Simple search with a procedure result and click-to-copy code](navigator-search.png)
+![Simple search with a procedure result and click-to-copy code](navigator-search-v3.3.jpg)
 
-Search recognizes a defined set of English/French terms and abbreviations. It does not understand every colloquial name or learn new terms automatically. If a phrase finds nothing, try the anatomical browser, advanced fields or the official code. A query with recognized negation or contradictory procedure/code information asks for clarification instead of silently ignoring the difference.
+Search recognizes a defined set of English/French terms and abbreviations. It does not understand every colloquial name or learn new terms automatically. If a phrase finds nothing, try the anatomical browser, advanced fields or the official code. “Without osteotomy” matches only entries explicitly stating that exclusion. Other negative qualifiers and contradictory procedure/code information ask for clarification. A combined procedure description is not automatically converted into a billable code combination. Laminectomy results can include discectomy entries that mention it; these procedures are not interchangeable.
 
 ## Browse by body part
 
 Select **Browse by body part** to expand the anatomical browser. It starts collapsed to keep the search area clear. Select a region, then a named body part or a point on the diagram. **Pelvis** and **Spinal column** are separate options.
 
-Select the heading again to collapse it. This browser is orthopedic and switches the specialty filter to orthopedics.
+Select the heading again to collapse it. When a search is active, choosing a body part narrows that search instead of clearing it. For broad searches such as `fusion`, optional body-part buttons also appear beneath the search box. Without a search, the anatomical browser opens the full section.
+
+![Fusion results narrowed to the foot](navigator-fusion-v3.3.jpg)
 
 ![Expanded anatomical browser with separate pelvis and spinal-column options](navigator-anatomy.png)
 
@@ -34,7 +36,7 @@ Orthopedics appears first in the specialty selector. Choose another indexed spec
 
 ## Read notes and check the source
 
-Expand **Notes & conditions** beneath a result to view the manual path, conditions and original French wording. Select **Source** for the source popup, or the RAMQ link to open the indexed source location.
+Expand **Notes & source** beneath a result to view the manual path, conditions and original French wording. Select **Source** for the source popup, or the RAMQ link to open the indexed source location.
 
 ![Source popup with the original French wording and RAMQ source link](navigator-source.png)
 
@@ -50,9 +52,13 @@ Use **EN / FR** to change language, **Phone / Tablet / Desktop** to choose the l
 
 ## Current limits
 
-**Version 3.2 · manual snapshot: October 15, 2026.**
+**Version 3.3 · manual snapshot: October 15, 2026.**
 
 This is a navigation prototype, not an official RAMQ application or a validated autonomous billing-code selector. The data does not refresh automatically. Known vocabulary gaps, imported hierarchy errors and unreviewed translations remain. English medical descriptions and conditions are **not fully clinically reviewed**; consult the original RAMQ source when meaning or eligibility is uncertain.
+
+Version 3.3 corrects 10 foot/spine heading paths. A comparison with the saved source range retains 76 foot rows and 101 spinal-column rows; all 5,679 catalogue entries remain available. See [the source comparison](data-audit.json). This is not a full clinical validation of the catalogue. DeepL and adaptive learning are not connected.
+
+[Download the self-contained v3.3 HTML](RAMQ_Navigator_v3.3.html) for a copy that runs without a server.
 
 No claims are submitted by this application. Search runs in your browser; do not enter patient names, identifiers or confidential clinical details.
 
