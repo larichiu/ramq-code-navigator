@@ -1,0 +1,866 @@
+{
+  "date": "2026-10-26",
+  "namedBodyLabelsChecked": 15,
+  "glossaryRecords": 28,
+  "correctedStrings": 57,
+  "scope": "All 15 nonempty MSK body labels plus selected problematic anatomical terms. No claim of full clinical review of procedure descriptions or conditions.",
+  "integration": "Locally stored, dictionary-checked terminology with reference links. Not a live dictionary translation API.",
+  "glossary": [
+    {
+      "fr": "Colonne vertébrale",
+      "en": "Spinal column",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8372336/colonne-vertebrale"
+        }
+      ],
+      "aliases": [
+        "colonne vertébrale",
+        "rachis"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Thorax",
+      "en": "Thorax",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8436752/thorax"
+        }
+      ],
+      "aliases": [
+        "Thorax"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Bassin",
+      "en": "Pelvis",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26504707/pelvis"
+        }
+      ],
+      "aliases": [
+        "bassin",
+        "pelvis"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Épaule",
+      "en": "Shoulder",
+      "sources": [
+        {
+          "name": "TERMIUM Plus",
+          "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?fchrcrdnm=9&i=&index=alt&lang=eng&sg_kp_wet=1616490&srchtxt=EPAULE"
+        }
+      ],
+      "aliases": [
+        "Épaule"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Bras (humérus)",
+      "en": "Upper arm (humerus)",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8449636/bras"
+        },
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17024389/humerus"
+        }
+      ],
+      "aliases": [
+        "bras",
+        "humérus"
+      ],
+      "bodyLabel": true,
+      "context": "Upper arm is a clarifying display label for the anatomical arm; it does not mean the whole upper limb.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Coude",
+      "en": "Elbow",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359257/coude"
+        }
+      ],
+      "aliases": [
+        "Coude"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Avant-bras",
+      "en": "Forearm",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/10426108/avant-bras"
+        }
+      ],
+      "aliases": [
+        "Avant-bras"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Main et poignet",
+      "en": "Hand and wrist",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8443473/main"
+        },
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17081270/poignet"
+        }
+      ],
+      "aliases": [
+        "main",
+        "poignet"
+      ],
+      "bodyLabel": true,
+      "context": "Composite navigation label; both components checked.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Hanche",
+      "en": "Hip",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8403720/hanche"
+        }
+      ],
+      "aliases": [
+        "Hanche"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Cuisse",
+      "en": "Thigh",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17023099/cuisse"
+        }
+      ],
+      "aliases": [
+        "Cuisse"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Fémur",
+      "en": "Femur",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17028925/femur"
+        }
+      ],
+      "aliases": [
+        "Fémur"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Genou",
+      "en": "Knee",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359538/genou"
+        }
+      ],
+      "aliases": [
+        "Genou"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Tibia et péroné",
+      "en": "Tibia and fibula",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359916/tibia"
+        },
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358430/fibula"
+        }
+      ],
+      "aliases": [
+        "tibia",
+        "péroné",
+        "fibula"
+      ],
+      "bodyLabel": true,
+      "context": "RAMQ wording retained in French; fibula is the English display term.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Cheville",
+      "en": "Ankle",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17081530/cheville"
+        }
+      ],
+      "aliases": [
+        "Cheville"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Pied",
+      "en": "Foot",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17028757/pied"
+        }
+      ],
+      "aliases": [
+        "Pied"
+      ],
+      "bodyLabel": true,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Membre supérieur",
+      "en": "Upper limb",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8414694/membre-superieur"
+        }
+      ],
+      "aliases": [
+        "membre supérieur",
+        "membres supérieurs"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Membre inférieur",
+      "en": "Lower limb",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8414696/membre-inferieur"
+        }
+      ],
+      "aliases": [
+        "membre inférieur",
+        "membres inférieurs"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Articulation sous-astragalienne",
+      "en": "Subtalar joint",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17039741/articulation-astragalocalcaneenne"
+        }
+      ],
+      "aliases": [
+        "sous-astragalienne",
+        "sous-talienne",
+        "subtalienne",
+        "subtalaire",
+        "astragalo-calcanéenne"
+      ],
+      "bodyLabel": "",
+      "context": "Term equivalence; it does not establish eligibility for a procedure code.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Talus (astragale)",
+      "en": "Talus",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358620/talus"
+        }
+      ],
+      "aliases": [
+        "talus",
+        "astragale"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Ulna (cubitus)",
+      "en": "Ulna",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359258/ulna"
+        },
+        {
+          "name": "TERMIUM Plus",
+          "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?i=&index=frr&lang=eng&srchtxt=ULNA"
+        }
+      ],
+      "aliases": [
+        "ulna",
+        "cubitus"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Fibula (péroné)",
+      "en": "Fibula",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358430/fibula"
+        }
+      ],
+      "aliases": [
+        "fibula",
+        "péroné"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Radius",
+      "en": "Radius",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359525/radius"
+        }
+      ],
+      "aliases": [
+        "Radius"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Calcanéus (calcanéum)",
+      "en": "Calcaneus",
+      "sources": [
+        {
+          "name": "TERMIUM Plus",
+          "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?codom2nd_wet=1&i=&index=frr&lang=eng&srchtxt=calcaneus"
+        }
+      ],
+      "aliases": [
+        "calcanéus",
+        "calcanéum"
+      ],
+      "bodyLabel": "",
+      "context": "Use the Bones and Joints record, not the animal-anatomy records.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Os naviculaire (scaphoïde tarsien)",
+      "en": "Navicular bone",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358611/os-naviculaire"
+        }
+      ],
+      "aliases": [
+        "naviculaire",
+        "scaphoïde tarsien"
+      ],
+      "bodyLabel": "",
+      "context": "Foot only: an unqualified scaphoïde in a foot row is interpreted in that anatomical context, never as the wrist scaphoid.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Scaphoïde carpien",
+      "en": "Scaphoid bone",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17077767/scaphoide-carpien"
+        }
+      ],
+      "aliases": [
+        "scaphoïde carpien"
+      ],
+      "bodyLabel": "",
+      "context": "Wrist context only; distinct from the navicular bone of the foot.",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Os semilunaire",
+      "en": "Lunate bone",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8439888/os-semilunaire"
+        }
+      ],
+      "aliases": [
+        "semi-lunaire",
+        "semilunaire",
+        "lunatum"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Bourse séreuse",
+      "en": "Bursa",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17083374/bourse-sereuse"
+        }
+      ],
+      "aliases": [
+        "bourse séreuse",
+        "bourse"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    },
+    {
+      "fr": "Crâne",
+      "en": "Skull",
+      "sources": [
+        {
+          "name": "OQLF / GDT",
+          "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8450190/crane"
+        }
+      ],
+      "aliases": [
+        "crâne"
+      ],
+      "bodyLabel": false,
+      "context": "",
+      "checked": "2026-10-26",
+      "status": "dictionary-checked"
+    }
+  ],
+  "changes": [
+    {
+      "fr": "du péroné",
+      "before": "Peronea",
+      "after": "Of the fibula",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "arthrodèse primaire sous-astragalienne",
+      "before": "sub-astragalian primary arthrodesis",
+      "after": "Primary subtalar arthrodesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "bourse calcanéenne (talon)",
+      "before": "Calcanean scholarship (talon)",
+      "after": "Calcaneal bursa (heel)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "calcanéum",
+      "before": "calcaneum",
+      "after": "Calcaneus",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tibia et péroné avec ou sans greffe plus appareillage",
+      "before": "tibia and peronea with or without graft plus apparatus",
+      "after": "tibia and fibula with or without graft plus apparatus",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "plaque et vis - radius et cubitus",
+      "before": "plate and screws - radius and ubitus",
+      "after": "plate and screws - radius and ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "bourse sous-deltoïdienne",
+      "before": "sub-deltoid scholarship",
+      "after": "Subdeltoid bursa",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur - radius ou cubitus",
+      "before": "tumour - radius or ubitus",
+      "after": "tumour - radius or ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "simple tibia et/ou péroné",
+      "before": "single tibia and/or perone",
+      "after": "single tibia and/or fibula",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "remplacement du cubitus distal par prothèse incluant, le cas échéant, l'exérèse osseuse",
+      "before": "replacement of distal ubitus by prosthesis including bone excision, if any",
+      "after": "replacement of distal ulna by prosthesis including bone excision, if any",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "bourse olécrânienne (PG-28)",
+      "before": "Olecranian Scholarship (PG-28)",
+      "after": "Olecranon bursa (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "radius et/ou cubitus proximal ou distal, ipsilatéraux",
+      "before": "radius and/or proximal or distal ubitus, ipsilatral",
+      "after": "radius and/or proximal or distal ulna, ipsilatral",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur bénigne calcanéum ou astragale avec ostéosynthèse",
+      "before": "benign calcaneum or astragal tumour with osteosynthesis",
+      "after": "benign calcaneum or talus tumour with osteosynthesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur maligne calcanéum ou astragale avec ostéosynthèse",
+      "before": "calcaneum or astral malignant tumour with osteosynthesis",
+      "after": "calcaneum or talus malignant tumour with osteosynthesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "calcanéum, astragale ou tarse",
+      "before": "calcaneum, astragal or tarse",
+      "after": "calcaneum, talus or tarse",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "bourse malléolaire, prérotulienne, prétibiale",
+      "before": "malleolar, prerotulian, pretibial scholarship",
+      "after": "Malleolar, prepatellar or pretibial bursa",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "Arthroplastie de remplacement (incluant l'allogreffe en bloc à l'humérus et/ou au cubitus, le cas échéant)",
+      "before": "Replacement arthroplasty (including lumpy allogene with humerus and/or cubitus, if applicable)",
+      "after": "Replacement arthroplasty (including lumpy allogene with humerus and/or ulna, if applicable)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "radius ou cubitus",
+      "before": "Radius or ubitus",
+      "after": "Radius or ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "scaphoïde et semi-lunaire (greffe osseuse) (PG-28)",
+      "before": "scaphoid and semi-lunar (bone graft) (PG-28)",
+      "after": "Scaphoid and lunate (bone graft) (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "astragale",
+      "before": "astral",
+      "after": "Talus",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "si arthrodèse sous-astragalienne ou ostéotomie supra-malléolaire, supplément",
+      "before": "if subastragal or supramalleolar osteotomy, supplement",
+      "after": "If subtalar arthrodesis or supramalleolar osteotomy is performed, supplement",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "péroné seul",
+      "before": "Perone alone",
+      "after": "Fibula alone",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "AVIS : La révision tibio-astragalienne (code de facturation 18066 ) doit être facturée à la suite de l'arthrodèse tibio-astragalienne primaire (code de facturation 02938 ). Inscrire la date ou l'année de l'arthrodèse tibio-astragalienne primaire (code de facturation 02938 ).",
+      "before": "NOTICE: The tibio-astragalian revision (invoicing code 18066 ) must be invoiced as a result of the tibio-astragalian primary arthrodesis (invoicing code 02938 ).  Enter the date or year of the primary tibio-astragalan osteoarthrodesis (invoicing code 02938 ).",
+      "after": "NOTICE: The tibiotalar revision (invoicing code 18066 ) must be invoiced as a result of the tibiotalar primary arthrodesis (invoicing code 02938 ).  Enter the date or year of the primary tibiotalar osteoarthrodesis (invoicing code 02938 ).",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "scaphoïde, semi-lunaire",
+      "before": "scaphoid, semi-lunar",
+      "after": "Scaphoid and lunate",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tibio-talo-calcanéenne",
+      "before": "tibio-talo-calcaneal",
+      "after": "Tibiotalocalcaneal arthrodesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "radius et cubitus (incluant reconstruction d'anomalie congénitale de l'avant-bras)",
+      "before": "radius and ubitus (including reconstruction of congenital anomaly of the forearm)",
+      "after": "radius and ulna (including reconstruction of congenital anomaly of the forearm)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "cubitus",
+      "before": "ubitus",
+      "after": "Ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "complète d'astragale ou de calcanéum",
+      "before": "complete with astragal or calcaneum",
+      "after": "complete with talus or calcaneum",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "Incision et drainage ou mise à plat de calcanéum ou d'astragale (PG-28)",
+      "before": "Incision and drainage or flattening of calcaneum or astragal (PG-28)",
+      "after": "Incision and drainage or flattening of calcaneum or talus (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tarse ou tarso-métatarsienne (Lisfranc)",
+      "before": "Tarse or tarso-mettarsian (Lisfranc)",
+      "after": "Tarsal or tarsometatarsal (Lisfranc)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "de Monteggia, apophyse coronoïde, cubitus seul, radius seul, tête ou col du radius ou olécrane",
+      "before": "of Monteggia, coronoid apophysis, cubitus alone, radius alone, radius head or collar or olscreen",
+      "after": "of Monteggia, coronoid apophysis, ulna alone, radius alone, radius head or collar or olscreen",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "radius et cubitus",
+      "before": "Radius and cubatus",
+      "after": "Radius and ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "révision tibio-astragalienne",
+      "before": "tibio-astragalian revision",
+      "after": "Revision tibiotalar arthrodesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "bourse péritrochantérienne",
+      "before": "Peritrochanterian scholarship",
+      "after": "Peritrochanteric bursa",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tibio-astragalienne primaire",
+      "before": "primary tibio-astragalian",
+      "after": "Primary tibiotalar arthrodesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "réduction ouverte astragale",
+      "before": "open reduction astragal",
+      "after": "open reduction talus",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur bénigne péroné ou tibia (exostose, tête et péroné, etc.) avec ostéosynthèse",
+      "before": "benign perone or tibia tumour (exostosis, head and perone, etc.) with osteosynthesis",
+      "after": "benign fibula or tibia tumour (exostosis, head and fibula, etc.) with osteosynthesis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "remplacement de la composante tibiale ou astragalienne",
+      "before": "replacement of the tibial or astral component",
+      "after": "replacement of the tibial or talar component",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "carpe (scaphoïde, semi-lunaire) greffe osseuse ou exérèse et remplacement par prothèse (PG-28)",
+      "before": "carp (scaphoid, semi-lunar) bone graft or excision and prosthetic replacement (PG-28)",
+      "after": "carp (scaphoid, lunate) bone graft or excision and prosthetic replacement (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "plaque et vis - cubitus",
+      "before": "plate and screws - ubitus",
+      "after": "plate and screws - ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "fracture - radius et cubitus",
+      "before": "fracture - radius and ubitus",
+      "after": "fracture - radius and ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "clou ou broche - radius ou cubitus (PG-28)",
+      "before": "nail or pin - radius or ubitus (PG-28)",
+      "after": "nail or pin - radius or ulna (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "plaque plus vis - péroné",
+      "before": "plate plus screw - perone",
+      "after": "plate plus screw - fibula",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "carpe (semi-lunaire et scaphoïde exceptés) (PG-28)",
+      "before": "carp (semi-lunar and scaphoid excepted) (PG-28)",
+      "after": "Carpus (excluding the lunate and scaphoid) (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "Biopsie - radius ou cubitus",
+      "before": "Biopsy - radius or ubitus",
+      "after": "Biopsy - radius or ulna",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "extrémité inférieure (styloïde cubitale ou radiale) ou exostose du cubitus ou du radius (PG-28)",
+      "before": "lower extremity (cubial or radial styloid) or exostosis of ubitus or radius (PG-28)",
+      "after": "lower extremity (cubial or radial styloid) or exostosis of ulna or radius (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "réduction ouverte sauf l'astragale ou le calcanéum",
+      "before": "open reduction except astragal or calcaneum",
+      "after": "open reduction except talus or calcaneum",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "bassin",
+      "before": "basin",
+      "after": "Pelvis",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "clou ou broche - radius et cubitus (PG-28)",
+      "before": "nail or pin - radius and ubitus (PG-28)",
+      "after": "nail or pin - radius and ulna (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur bénigne péroné ou tibia (exostose, tête et péroné, etc.)",
+      "before": "benign perone or tibia tumour (exostosis, head and perone, etc.)",
+      "after": "benign fibula or tibia tumour (exostosis, head and fibula, etc.)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "Articulations calcanéo-cuboidienne, astragalo-calcanéenne et talo-naviculaire",
+      "before": "Calcaneocuboid, talocalcaneal and talonavicular joints",
+      "after": "Calcaneocuboid, subtalar and talonavicular joints",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur maligne calcanéum ou astragale",
+      "before": "calcaneum or astragal malignant tumour",
+      "after": "calcaneum or talus malignant tumour",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tumeur bénigne calcanéum ou astragale (PG-28)",
+      "before": "benign calcaneum or astral tumour (PG-28)",
+      "after": "benign calcaneum or talus tumour (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "vis, fils, broches - tibia ou péroné (PG-28)",
+      "before": "screws, threads, pins - tibia or peroneum (PG-28)",
+      "after": "screws, threads, pins - tibia or fibula (PG-28)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "en un seul temps (incluant l'exérèse de prothèse tibiale et astragalienne et, le cas échéant, l'ostéotomie tibiale ou la fenêtre)",
+      "before": "in a single time (including tibial and astral prosthetic exesis and, where appropriate, tibial osteotomy or window)",
+      "after": "in a single time (including tibial and talar prosthetic exesis and, where appropriate, tibial osteotomy or window)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "par transposition du péroné",
+      "before": "by transposing peronea",
+      "after": "by transposing fibula",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    },
+    {
+      "fr": "tibia (avec ou sans péroné)",
+      "before": "tibia (with or without peronea)",
+      "after": "tibia (with or without fibula)",
+      "scope": "Anatomical terminology; full sentence not clinically validated"
+    }
+  ]
+}

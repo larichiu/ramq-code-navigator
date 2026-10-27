@@ -3,6 +3,11 @@ const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u03
 const has=(s,t)=>(' '+norm(s)+' ').includes(' '+norm(t)+' ');
 const body=e=>norm(e.body),cat=e=>norm(e.category),sub=e=>norm(e.subfields.join(' ')),label=e=>norm(e.title),all=e=>norm(e.path.join(' ')+' '+e.title);
 const concepts=[
+ [/\b(subtalar|sous astragalien(?:ne)?|sous talien(?:ne)?|subtalien(?:ne)?|subtalaire)\b/g,e=>/sous astragal|astragalo calcane|sous tal|subtal/.test(all(e)),'subtalar'],
+ [/\b(talus|astragale)\b/g,e=>/\bastragale\b|\btalus\b/.test(all(e)),'talus'],
+ [/\b(ulna|cubitus)\b/g,e=>/\bulna\b|\bcubitus\b/.test(all(e)),'ulna'],
+ [/\b(navicular|naviculaire)\b/g,e=>body(e)==='pied'&&/navicul|scaphoide/.test(all(e)),'navicular'],
+
  [/\b(?:(?:1st|first|1er|premier|great toe|big toe|hallux)\s+)?(?:mtp(?:j|1)?|metatarsophalangeal(?: joint)?|metatarso phalangienne?)\b/g,e=>body(e)==='pied'&&/metatarso phalang/.test(label(e)),'mtp'],
  [/\b(?:(?:first|1st|big|great) toe|hallux)(?: joint)?\b/g,e=>body(e)==='pied'&&(/metatarso phalang|interphalang/.test(label(e))||/hallux/.test(all(e))),'toe'],
  [/\b(ip(?:j)?|interphalangeal(?: joint)?|interphalangienne?)\b/g,e=>/interphalang/.test(all(e)),'ip'],
@@ -27,7 +32,7 @@ const concepts=[
  [/\b(knees?|genoux|genou)\b/g,e=>body(e)==='genou','knee'],
  [/\b(tibia and fibula|tibia et perone|tibia|fibula|perone|lower leg)\b/g,e=>body(e)==='tibia et perone','leg'],
  [/\b(feet|foot|pieds?)\b/g,e=>body(e)==='pied','foot'],
- [/\b(spine|spinal|vertebral|colonne vertebrale|rachis)\b/g,e=>body(e)==='colonne vertebrale','spine'],
+ [/\b(spine|spinal(?: column)?|vertebral|colonne vertebrale|rachis)\b/g,e=>body(e)==='colonne vertebrale','spine'],
  [/\b(pelvis|pelvic|acetabul(?:um|ar)|bassin)\b/g,e=>body(e)==='bassin','pelvis'],
  [/\b(fractures?|fractured|fx)\b/g,e=>/fractur/.test(cat(e))||/fractur/.test(label(e)),'fracture'],
  [/\b(orif|rofi|open reduction(?: (?:and )?internal fixation)?|reduction ouverte(?: et fixation interne)?)\b/g,e=>/reduction ouverte/.test(sub(e)+' '+label(e)),'openReduction'],
@@ -60,7 +65,7 @@ const concepts=[
 // Long phrases take precedence over their component anatomy words.
 const ordered=concepts.slice().sort((a,b)=>b[0].source.length-a[0].source.length);
 const translations={plates:'plaque',plate:'plaque',screws:'vis',screw:'vis',percutaneous:'percutanee',pinning:'fixation percutanee',pins:'broche',pin:'broche',arthroplasty:'arthroplastie',replacement:'prothese',repair:'reparation',reconstruction:'reconstruction',debridement:'debridement',drainage:'drainage',decompression:'decompression',primary:'primaire',secondary:'secondaire',ligament:'ligament',medial:'medial',lateral:'lateral',proximal:'proximale',distal:'distale',anterior:'anterieur',posterior:'posterieur',patella:'rotule',patellar:'rotulien',humeral:'humerale',femoral:'femorale',osteosynthesis:'osteosynthese',ulna:'cubitus',radial:'radius',malunion:'malunion',nonunion:'pseudarthrose',humerus:'humerus',tendon:'tendon',biopsy:'biopsie',excision:'excision',amputation:'amputation'};
-const stop=new Set('correction joint joints i did do doing had have performed performing patient a an the of for to my with without on in at from under and or is it this that procedure surgery surgical case please find show me all possible code codes time ortho orthopedics orthopaedics orthopedic orthopaedic anesthesiology anesthesiologie anaesthesiology anesthesia anaesthesia anesthesie general generale ga r2 r1 units unit duration temps duree unite unites de du des d la le les un une au aux en pour sous avec sans et ou par je ai fait une intervention chirurgie orthopedique service services des what which can you need would like looking look want cases case right left bilateral both done perform performed type get give related show looking search some give please'.split(' '));
+const stop=new Set('articulation articulations correction joint joints i did do doing had have performed performing patient a an the of for to my with without on in at from under and or is it this that procedure surgery surgical case please find show me all possible code codes time ortho orthopedics orthopaedics orthopedic orthopaedic anesthesiology anesthesiologie anaesthesiology anesthesia anaesthesia anesthesie general generale ga r2 r1 units unit duration temps duree unite unites de du des d la le les un une au aux en pour sous avec sans et ou par je ai fait une intervention chirurgie orthopedique service services des what which can you need would like looking look want cases case right left bilateral both done perform performed type get give related show looking search some give please'.split(' '));
 function infer(q){const n=norm(q);return{role:/anesth|anaesth|r 2|r2|time code|time units|unites de base/.test(n)?'anesthesia':null,durationOnly:!/fracture|orif|rofi|ankle|cheville|ortho/.test(n)&&/duration units|unites de duree|time table|duration table|tableau.*duree/.test(n)}}
 function inSpecialty(e,scope){if(scope==='all')return true;if(scope==='ortho'||scope==='Chirurgie orthopédique')return e.orthopedic||e.topic==='Chirurgie orthopédique';return e.topic===scope||e.path.some(p=>norm(p)===norm(scope));}
 function find(q,entries,{scope='ortho',role='surgery',inferRole=true}={}){
@@ -81,7 +86,9 @@ function find(q,entries,{scope='ortho',role='surgery',inferRole=true}={}){
  return{entries:list.filter(e=>inSpecialty(e,scope)),concepts:['code'],unrecognized:[],role,code:true}}
 
  let remaining=n,tests=noOsteotomy?[e=>/sans osteotomie/.test(all(e))]:[],used=[];const revision=/\b(revision|reprise)\b/.test(n);
- for(const [re,test,key] of ordered){re.lastIndex=0;if(re.test(remaining)){
+ const phraseLength=([re])=>Math.max(0,...Array.from(n.matchAll(new RegExp(re.source,'g')),m=>m[0].length));
+ const queryOrder=ordered.slice().sort((a,b)=>phraseLength(b)-phraseLength(a));
+ for(const [re,test,key] of queryOrder){re.lastIndex=0;if(re.test(remaining)){
    // Revision arthroplasty uses its own published table, rather than the primary-implant alias.
    if(revision&&['totalKnee','totalHip','totalShoulder','unicompartmentalKnee','reverseShoulder'].includes(key)){
      const region=key==='totalKnee'||key==='unicompartmentalKnee'?'genou':key==='totalHip'?'hanche':'epaule';tests.push(e=>body(e)===region&&/arthroplastie de remplacement/.test(cat(e)));

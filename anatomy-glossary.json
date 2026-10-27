@@ -1,0 +1,514 @@
+[
+  {
+    "fr": "Colonne vertébrale",
+    "en": "Spinal column",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8372336/colonne-vertebrale"
+      }
+    ],
+    "aliases": [
+      "colonne vertébrale",
+      "rachis"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Thorax",
+    "en": "Thorax",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8436752/thorax"
+      }
+    ],
+    "aliases": [
+      "Thorax"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Bassin",
+    "en": "Pelvis",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/26504707/pelvis"
+      }
+    ],
+    "aliases": [
+      "bassin",
+      "pelvis"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Épaule",
+    "en": "Shoulder",
+    "sources": [
+      {
+        "name": "TERMIUM Plus",
+        "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?fchrcrdnm=9&i=&index=alt&lang=eng&sg_kp_wet=1616490&srchtxt=EPAULE"
+      }
+    ],
+    "aliases": [
+      "Épaule"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Bras (humérus)",
+    "en": "Upper arm (humerus)",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8449636/bras"
+      },
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17024389/humerus"
+      }
+    ],
+    "aliases": [
+      "bras",
+      "humérus"
+    ],
+    "bodyLabel": true,
+    "context": "Upper arm is a clarifying display label for the anatomical arm; it does not mean the whole upper limb.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Coude",
+    "en": "Elbow",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359257/coude"
+      }
+    ],
+    "aliases": [
+      "Coude"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Avant-bras",
+    "en": "Forearm",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/10426108/avant-bras"
+      }
+    ],
+    "aliases": [
+      "Avant-bras"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Main et poignet",
+    "en": "Hand and wrist",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8443473/main"
+      },
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17081270/poignet"
+      }
+    ],
+    "aliases": [
+      "main",
+      "poignet"
+    ],
+    "bodyLabel": true,
+    "context": "Composite navigation label; both components checked.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Hanche",
+    "en": "Hip",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8403720/hanche"
+      }
+    ],
+    "aliases": [
+      "Hanche"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Cuisse",
+    "en": "Thigh",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17023099/cuisse"
+      }
+    ],
+    "aliases": [
+      "Cuisse"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Fémur",
+    "en": "Femur",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17028925/femur"
+      }
+    ],
+    "aliases": [
+      "Fémur"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Genou",
+    "en": "Knee",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359538/genou"
+      }
+    ],
+    "aliases": [
+      "Genou"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Tibia et péroné",
+    "en": "Tibia and fibula",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359916/tibia"
+      },
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358430/fibula"
+      }
+    ],
+    "aliases": [
+      "tibia",
+      "péroné",
+      "fibula"
+    ],
+    "bodyLabel": true,
+    "context": "RAMQ wording retained in French; fibula is the English display term.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Cheville",
+    "en": "Ankle",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17081530/cheville"
+      }
+    ],
+    "aliases": [
+      "Cheville"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Pied",
+    "en": "Foot",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17028757/pied"
+      }
+    ],
+    "aliases": [
+      "Pied"
+    ],
+    "bodyLabel": true,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Membre supérieur",
+    "en": "Upper limb",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8414694/membre-superieur"
+      }
+    ],
+    "aliases": [
+      "membre supérieur",
+      "membres supérieurs"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Membre inférieur",
+    "en": "Lower limb",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8414696/membre-inferieur"
+      }
+    ],
+    "aliases": [
+      "membre inférieur",
+      "membres inférieurs"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Articulation sous-astragalienne",
+    "en": "Subtalar joint",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17039741/articulation-astragalocalcaneenne"
+      }
+    ],
+    "aliases": [
+      "sous-astragalienne",
+      "sous-talienne",
+      "subtalienne",
+      "subtalaire",
+      "astragalo-calcanéenne"
+    ],
+    "bodyLabel": "",
+    "context": "Term equivalence; it does not establish eligibility for a procedure code.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Talus (astragale)",
+    "en": "Talus",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358620/talus"
+      }
+    ],
+    "aliases": [
+      "talus",
+      "astragale"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Ulna (cubitus)",
+    "en": "Ulna",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359258/ulna"
+      },
+      {
+        "name": "TERMIUM Plus",
+        "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?i=&index=frr&lang=eng&srchtxt=ULNA"
+      }
+    ],
+    "aliases": [
+      "ulna",
+      "cubitus"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Fibula (péroné)",
+    "en": "Fibula",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358430/fibula"
+      }
+    ],
+    "aliases": [
+      "fibula",
+      "péroné"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Radius",
+    "en": "Radius",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359525/radius"
+      }
+    ],
+    "aliases": [
+      "Radius"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Calcanéus (calcanéum)",
+    "en": "Calcaneus",
+    "sources": [
+      {
+        "name": "TERMIUM Plus",
+        "url": "https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?codom2nd_wet=1&i=&index=frr&lang=eng&srchtxt=calcaneus"
+      }
+    ],
+    "aliases": [
+      "calcanéus",
+      "calcanéum"
+    ],
+    "bodyLabel": "",
+    "context": "Use the Bones and Joints record, not the animal-anatomy records.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Os naviculaire (scaphoïde tarsien)",
+    "en": "Navicular bone",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8358611/os-naviculaire"
+      }
+    ],
+    "aliases": [
+      "naviculaire",
+      "scaphoïde tarsien"
+    ],
+    "bodyLabel": "",
+    "context": "Foot only: an unqualified scaphoïde in a foot row is interpreted in that anatomical context, never as the wrist scaphoid.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Scaphoïde carpien",
+    "en": "Scaphoid bone",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17077767/scaphoide-carpien"
+      }
+    ],
+    "aliases": [
+      "scaphoïde carpien"
+    ],
+    "bodyLabel": "",
+    "context": "Wrist context only; distinct from the navicular bone of the foot.",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Os semilunaire",
+    "en": "Lunate bone",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8439888/os-semilunaire"
+      }
+    ],
+    "aliases": [
+      "semi-lunaire",
+      "semilunaire",
+      "lunatum"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Bourse séreuse",
+    "en": "Bursa",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17083374/bourse-sereuse"
+      }
+    ],
+    "aliases": [
+      "bourse séreuse",
+      "bourse"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  },
+  {
+    "fr": "Crâne",
+    "en": "Skull",
+    "sources": [
+      {
+        "name": "OQLF / GDT",
+        "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8450190/crane"
+      }
+    ],
+    "aliases": [
+      "crâne"
+    ],
+    "bodyLabel": false,
+    "context": "",
+    "checked": "2026-10-26",
+    "status": "dictionary-checked"
+  }
+]

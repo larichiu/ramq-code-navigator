@@ -12,3 +12,5 @@
 @media(max-width:600px){.code-column{flex-basis:76px}.procedure-card>details{margin-left:90px}.card-top{gap:14px}.procedure-card{padding:12px 8px}.procedure-card .code{font-size:18px}.anatomy-heading{font-size:17px}}
 
 .related-label{font-size:11px;color:var(--muted);display:block;margin-bottom:4px}
+
+.glossary-scroll{overflow-x:auto;margin-top:18px}.anatomy-table{width:100%;border-collapse:collapse;font-size:13px}.anatomy-table td,.anatomy-table th{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--border)}.anatomy-table a{text-decoration:underline;font-size:11px}.anatomy-references{margin:12px 0}#glossarySearch{display:block;width:100%;border:1px solid var(--border);padding:10px;border-radius:6px;background:var(--bg);margin-top:6px}

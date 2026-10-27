@@ -50,15 +50,23 @@ These are surgeon code families with eligibility conditions, not a general conve
 
 Use **EN / FR** to change language, **Phone / Tablet / Desktop** to choose the layout, and the bottom-right control to switch light/dark mode. These preferences are saved in your browser.
 
+## Bilingual anatomical terminology
+
+Select **EN/FR anatomy glossary** at the bottom of the page to search a 28-entry bilingual glossary with medical terminology reference links to OQLF/GDT and TERMIUM Plus. References for matching anatomical terms are also available within **Notes & source**.
+
+All 15 named MSK body-part navigation labels have been checked against dictionary entries. Version 3.3.1 corrects 57 anatomical translation strings, including **sous-astragalienne → subtalar**, **cubitus → ulna**, **astragale → talus**, and **péroné → fibula**. Foot navicular terminology is kept distinct from wrist scaphoid terminology. The original French RAMQ wording remains intact. The anatomy glossary is a locally stored reference layer, not a live translation API, a full clinical review, or a billing-code crosswalk.
+
+[Download the bilingual glossary (CSV)](anatomy-glossary.csv) · [Terminology check and corrections](terminology-audit.json)
+
 ## Current limits
 
-**Version 3.3 · manual snapshot: October 15, 2026.**
+**Version 3.3.1 · manual snapshot: October 15, 2026.**
 
 This is a navigation prototype, not an official RAMQ application or a validated autonomous billing-code selector. The data does not refresh automatically. Known vocabulary gaps, imported hierarchy errors and unreviewed translations remain. English medical descriptions and conditions are **not fully clinically reviewed**; consult the original RAMQ source when meaning or eligibility is uncertain.
 
 Version 3.3 corrects 10 foot/spine heading paths. A comparison with the saved source range retains 76 foot rows and 101 spinal-column rows; all 5,679 catalogue entries remain available. See [the source comparison](data-audit.json). This is not a full clinical validation of the catalogue. DeepL and adaptive learning are not connected.
 
-[Download the self-contained v3.3 HTML](RAMQ_Navigator_v3.3.html) for a copy that runs without a server.
+[Download the self-contained v3.3.1 HTML](RAMQ_Navigator_v3.3.1.html) for a copy that runs without a server.
 
 No claims are submitted by this application. Search runs in your browser; do not enter patient names, identifiers or confidential clinical details.
 

@@ -1,6 +1,6 @@
 {
   "project": "RAMQ Code Navigator",
-  "version": "3.3",
+  "version": "3.3.1",
   "copyright": "Copyright (c) 2026 Chiu",
   "softwareLicense": "MIT",
   "manualCaptured": "2026-10-15",
@@ -15,5 +15,13 @@
   "knownLimits": "Unresolved hierarchy errors, vocabulary gaps and partially reviewed translation. No active learning implemented.",
   "footRowsChecked": 76,
   "spinalColumnRowsChecked": 101,
-  "correctedHeadingPaths": 10
+  "correctedHeadingPaths": 10,
+  "anatomyLabelsChecked": 15,
+  "anatomyGlossaryRecords": 28,
+  "anatomicalStringsCorrected": 57,
+  "terminologySources": [
+    "OQLF / Grand dictionnaire terminologique",
+    "TERMIUM Plus"
+  ],
+  "terminologyIntegration": "Local dictionary-checked glossary with external reference links, not a live translation API"
 }
